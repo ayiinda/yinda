@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Halaman Mahasiswa</title>
+</head>
+
+<body>
+    #looping
+    <div>
+        {% for data in value %}
+        <li>{{ data }}</li>
+        {% endfor %}
+    </div>
+    #if-else
+    <div>
+        {% if suasana == "senang" %}
+        <p>dia juga suka</p>
+        {% else %}
+        <p>dia sedih</p>
+        {% endif %}
+    </div>
+    <div>
+        {% set hari = "jumat berkah" %}
+        <p>{{ hari }}</p>
+    </div>
+    <div>
+        {% for data in value %}
+        {% if data == "senin" %}
+        <p>aku senang</p>
+        {% elif data == "minggu" %}
+        <p>aku libur</p>
+        {% endif %}
+        {% endfor %}
+    </div>
+</body>
+
+.Venv\Scripts\activate
+
+</html>
